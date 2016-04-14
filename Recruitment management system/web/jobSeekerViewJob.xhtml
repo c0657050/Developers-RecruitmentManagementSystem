@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Online Recruitment</title>
+        <link href="rms.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+        <div id="templatemo_menu">
+            <ul>
+                <li><h:link outcome="jsLoggedIn">Home</h:link></li>    
+                <li><h:link>View Jobs</h:link></li>
+                <li><h:link outcome="jobSeekerSearchJob">Job Search</h:link></li>
+                <li><h:link outcome="jobSeekerResume">Fill Resume</h:link></li>
+                <li><h:link outcome="index">Log Out</h:link></li>            
+            </ul>    	
+        </div>
+        <div id="templatemo_site_title_bar_wrapper">
+
+            <div id="templatemo_site_title_bar">
+
+                <div class="site_title_left">
+
+                    <div id="site_title">
+                        <h1><h:link outcome="index">ONLINE RECRUITMENT
+                                <span>get your dreams come true</span></h:link>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="site_title_right">
+                <div id="head1" style="position:absolute; overflow:hidden; left:813px; top:111px; width:400px; height:253px; z-index:0">
+                    <h2><font color = "White">Where luck meets opportunity</font></h2>
+
+                </div>
+                <div id="templatemo_content_wrapper_outter">
+
+                    <div id="templatemo_content_wrapper_inner">
+
+                        <div id="templatemo_content_top"></div>
+
+                        <div id="templatemo_content">
+
+                            <div class="section_w860">	
+                                <div class="section_w380 float_l">
+
+                                    <h:form>                        
+                                        <h:outputLabel for="jsname" class="lbljsvjcname" >Company Name</h:outputLabel>
+                                        <h:outputLabel for="jsAddress" class="lbljsvjcaddress">Company Address</h:outputLabel>
+                                        <h:outputLabel for="jsPhone" class="lbljsvjcemail">Company Email</h:outputLabel>
+                                        <h:outputLabel for="jsEmail" class="lbljsvjcnumber">Contact Number</h:outputLabel>
+                                        <h:outputLabel for="jsEmail" class="lbljsvjjlocation">Job Location</h:outputLabel>
+                                        <h:outputLabel for="jsEmail" class="lbljsvjjspecification">Job Specification</h:outputLabel>
+                                        <h:outputLabel for="jsEmail" class="lbljsvjexperience">Experience</h:outputLabel>
+                                        <h:outputLabel for="jsEmail" class="lbljsvjskills">Skills</h:outputLabel>
+
+                                        <h:inputText  class="txtjsvjcname" value="#{jobController.currentJob.company}"/>
+                                        <h:inputText class="txtjsvjcaddress" value="#{jobController.currentJob.address}"/>
+                                        <h:inputText  class="txtjsvjcemail" value="#{jobController.currentJob.email}"/>
+                                        <h:inputText class="txtjsvjcnumber" value="#{jobController.currentJob.contact}"/>
+                                        <h:inputText  class="txtjsvjjlocation" value=""/>
+                                        <h:inputText class="txtjsvjjspecification" value="#{jobController.currentJob.specification}"></h:inputText>
+                                        <h:inputText  class="txtjsvjexperience" value=""/>
+                                        <h:inputText class="txtjsvjskills" value="#{jobController.currentJob.skills}"></h:inputText>
+                                        <h:commandButton value="Apply" class ="btnjsvjapply" />
+                                        <h:commandButton value="Back" class ="btnjsvjback" />
+                                    </h:form>
+                                </div>
+                                <div class="section_w380 float_r">
+                                    <div id="HEAD2" style="position:absolute; overflow:hidden; left:350px; top:400px; width:400px; height:53px; z-index:0">
+                                        <h2 id="view">Job Information </h2></div>
+
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                </div>
+                            </div>    
+
+                            <div class="cleaner_h30 divider"></div>
+
+
+                            <div class="cleaner"></div>        
+                        </div>
+
+                        <div id="templatemo_content_bottom"></div>
+                    </div> 
+
+                </div> 
+
+                <div id="templatemo_footer_wrapper">
+
+                    <div id="templatemo_footer">
+
+                        <div class="section_w280">
+
+                            <h3>For Job Seekers</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link outcome="jsLoggedIn">Home</h:link></li>    
+                                    <li><h:link>View Jobs</h:link></li>
+                                    <li><h:link outcome="jobSeekerSearchJob">Job Search</h:link></li>
+                                    <li><h:link outcome="jobSeekerResume">Fill Resume</h:link></li>
+                                    <li><h:link outcome="index">Log Out</h:link></li>             
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>For Recruiters</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link>Home</h:link></li>
+                                    <li><h:link>Recruiter</h:link></li>
+                                    <li><h:link>Sign Up</h:link></li>
+                                    <li><h:link>Login</h:link></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>Privacy Policy</h3>
+
+                            <div class="sub_content">
+                            </div>
+
+                        </div>
+
+                        <div class="cleaner_h40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>

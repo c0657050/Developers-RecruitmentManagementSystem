@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Online Recruitment</title>
+        <link href="rms.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+        <div id="templatemo_menu">
+            <ul>
+                <li><h:link outcome="jsLoggedIn">Home</h:link></li>    
+                <li><h:link outcome="jobSeekerViewAllJobs">View Jobs</h:link></li>
+                <li><h:link outcome="jobSeekerSearchJob">Job Search</h:link></li>
+                <li><h:link>Fill Resume</h:link></li>
+                <li><h:link outcome="index">Log Out</h:link></li>
+            </ul>    	
+        </div>
+        <div id="templatemo_site_title_bar_wrapper">
+
+            <div id="templatemo_site_title_bar">
+
+                <div class="site_title_left">
+
+                    <div id="site_title">
+                        <h1><h:link outcome="index">ONLINE RECRUITMENT
+                                <span>get your dreams come true</span></h:link>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="site_title_right">
+                <div id="head1" style="position:absolute; overflow:hidden; left:813px; top:111px; width:400px; height:253px; z-index:0">
+                    <h2><font color = "White">Where luck meets opportunity</font></h2>
+
+                </div>
+                <div id="templatemo_content_wrapper_outter">
+
+                    <div id="templatemo_content_wrapper_inner">
+
+                        <div id="templatemo_content_top"></div>
+
+                        <div id="templatemo_content">
+
+                            <div class="section_w860">	
+                                <div class="section_w380 float_l">
+                                    <h:form>
+                                        <h:outputLabel class="lbljsrposition" >Position</h:outputLabel>
+                                        <h:outputLabel class="lbljsrplocation">Preferred Location</h:outputLabel>
+                                        <h:outputLabel class="lbljsrname">Name</h:outputLabel>    
+                                        <h:outputLabel class="lbljsrgender">Gender</h:outputLabel>
+                                        <h:outputLabel class="lbljsrphone">Phone</h:outputLabel>
+                                        <h:outputLabel class="lbljsremail">Email</h:outputLabel>
+                                        <h:outputLabel class="lbljsraointerest">Area of Interest</h:outputLabel>
+                                        <h:outputLabel class="lbljsrpskills">Primary Skills</h:outputLabel>
+                                        <h:outputLabel class="lbljsrtexperience">Highest Qualification </h:outputLabel>
+                                        <h:outputLabel class="lbljsrclocation">Current Location</h:outputLabel>
+                                        <h:outputLabel class="lbljsrhqualification">Experience </h:outputLabel>
+                                        <h:outputLabel class="lbljsryopassing">Year of passing</h:outputLabel>
+                                        <h:selectOneMenu class="select4"  value="#{jobSeekerResumeController.jsr.position}">
+                                            <f:selectItem itemValue="UpTo 1" itemLabel="FrontEnd Developer" />
+                                            <f:selectItem itemValue="1" itemLabel="BackEnd Developer" />
+                                            <f:selectItem itemValue="2" itemLabel="Android Developer" />	   						
+                                            <f:selectItem itemValue="3" itemLabel="Web Developer" />
+                                            <f:selectItem itemValue="4" itemLabel="Java Developer" />
+                                            <f:selectItem itemValue="5+" itemLabel="IOS Developer" />
+                                        </h:selectOneMenu>
+
+                                        <h:selectOneMenu class="select5"  value="#{jobSeekerResumeController.jsr.preferredLocation}">
+                                            <f:selectItem itemValue="UpTo 1" itemLabel="Toronto" />
+                                            <f:selectItem itemValue="1" itemLabel="Vencover" />
+                                            <f:selectItem itemValue="2" itemLabel="Montrial" />	   						
+                                            <f:selectItem itemValue="3" itemLabel="Markham" />
+                                            <f:selectItem itemValue="4" itemLabel="Mississauga" />
+                                            <f:selectItem itemValue="5+" itemLabel="North York" />
+                                        </h:selectOneMenu>
+
+                                        <h:inputText  class="txtjsrfname" value="#{jobSeekerResumeController.jsr.firstName}"/>
+                                        <h:inputText  class="txtjsrlname" value="#{jobSeekerResumeController.jsr.lastName}"/>
+
+                                        <h:selectOneMenu class="select6"  value="#{jobSeekerResumeController.jsr.gender}">
+                                            <f:selectItem itemValue="Male" itemLabel="Male" />
+                                            <f:selectItem itemValue="Female" itemLabel="Female" />
+                                        </h:selectOneMenu>                        
+
+                                        <h:inputText  class="txtjsrphone" value="#{jobSeekerResumeController.jsr.phone}"/>
+
+
+                                        <h:inputText class="txtjsremail" value="#{jobSeekerResumeController.jsr.email}"/>                        
+
+                                        <h:selectOneMenu  class="select7" value="#{jobSeekerResumeController.jsr.areaOfInterest}">
+                                            <f:selectItem itemValue="Java" itemLabel="Java" />
+                                            <f:selectItem itemValue="C/C++" itemLabel="C/C++" />
+                                            <f:selectItem itemValue="Android" itemLabel="Android" />
+                                        </h:selectOneMenu>                        
+
+
+                                        <h:inputTextarea class="txtjsrpskills"  value="#{jobSeekerResumeController.jsr.primarySkills}" />
+
+                                        <h:selectOneMenu class="select8"  value="#{jobSeekerResumeController.jsr.experience}">
+                                            <f:selectItem itemValue="Experience" itemLabel="Experience" />
+                                            <f:selectItem itemValue="UpTo 1" itemLabel="UpTo 1" />
+                                            <f:selectItem itemValue="2" itemLabel="2" />	   						
+                                            <f:selectItem itemValue="3" itemLabel="3" />
+                                            <f:selectItem itemValue="4" itemLabel="4" />
+                                            <f:selectItem itemValue="5+" itemLabel="5 +" />
+                                        </h:selectOneMenu>                        
+
+                                        <h:inputTextarea class="txtjsrclocation" value="#{jobSeekerResumeController.jsr.currentLocation}" />                        
+
+                                        <h:selectOneMenu class="select9" value="#{jobSeekerResumeController.jsr.highestQualification}">
+                                            <f:selectItem itemValue="B.E/B.Tech" itemLabel="B.E/B.Tech" />
+                                            <f:selectItem itemValue="M.E/M.tech" itemLabel="M.E/M.tech" />	
+                                        </h:selectOneMenu>                        
+
+                                        <h:selectOneMenu class="select10"  value="#{jobSeekerResumeController.jsr.yearOfPassing}">
+                                            <f:selectItem itemValue="Year" itemLabel="Year" />
+                                            <f:selectItem itemValue="2019" itemLabel=" 2019" />
+                                            <f:selectItem itemValue="2018" itemLabel=" 2018" />
+                                            <f:selectItem itemValue="2017" itemLabel="2017" />
+
+                                            <f:selectItem itemValue="2016" itemLabel=" 2016" />
+                                            <f:selectItem itemValue="2015" itemLabel=" 2015" />
+                                            <f:selectItem itemValue="2014" itemLabel="2014" />
+                                            <f:selectItem itemValue="2013" itemLabel="2013" />	   						
+                                            <f:selectItem itemValue="2012" itemLabel="2012" />
+                                            <f:selectItem itemValue="2011" itemLabel="2011" />
+                                            <f:selectItem itemValue="2010" itemLabel="2010" />
+                                            <f:selectItem itemValue="2009" itemLabel="2009" />
+                                            <f:selectItem itemValue="2008" itemLabel="2008" />
+                                            <f:selectItem itemValue="2007" itemLabel="2007" />
+                                            <f:selectItem itemValue="2006" itemLabel="2006" />
+                                            <f:selectItem itemValue="2005" itemLabel="2005" />
+                                            <f:selectItem itemValue="2004" itemLabel="2004" /> 
+                                        </h:selectOneMenu>               
+                                        <h:commandButton value="Upload" action ="#{jobSeekerResumeController.addJobSeekersResume()}" class ="btnjsrupload" />    
+                                        <h:commandButton action="jobSeeker" value="Back" class ="btnjsrback" />    
+                                    </h:form>
+                                </div>
+                                <div class="section_w380 float_r">
+
+                                    <div id="HEAD2" style="position:absolute; overflow:hidden; left:360px; top:400px; width:400px; height:53px; z-index:0">
+                                        <h2>FILL RESUME  </h2>
+                                    </div>
+
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>                                    
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>                                    
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>                                    
+
+                                </div>
+                            </div>    
+
+                            <div class="cleaner_h30 divider"></div>
+
+
+                            <div class="cleaner"></div>        
+                        </div>
+
+                        <div id="templatemo_content_bottom"></div>
+
+                    </div> 
+
+                </div> 
+                <div id="templatemo_footer_wrapper">
+
+                    <div id="templatemo_footer">
+
+                        <div class="section_w280">
+
+                            <h3>For Job Seekers</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link outcome="jsLoggedIn">Home</h:link></li>    
+                                    <li><h:link outcome="jobSeekerViewAllJobs">View Jobs</h:link></li>
+                                    <li><h:link outcome="jobSeekerSearchJob">Job Search</h:link></li>
+                                    <li><h:link outcome="jobSeekerResume">Fill Resume</h:link></li>
+                                    <li><h:link outcome="index">Log Out</h:link></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>For Recruiters</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link>Home</h:link></li>
+                                    <li><h:link>Recruiter</h:link></li>
+                                    <li><h:link>Sign Up</h:link></li>
+                                    <li><h:link>Login</h:link></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>Privacy Policy</h3>
+
+                            <div class="sub_content">
+                            </div>
+
+                        </div>
+
+                        <div class="cleaner_h40"></div>
+                    </div></div></div>
+        </div>
+    </h:body>
+</html>
+

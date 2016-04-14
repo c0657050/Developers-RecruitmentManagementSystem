@@ -2,29 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
-
     <h:head>
-        <title>Online Recruitment Management</title>
+        <title>Online Recruitment</title>
         <link href="rms.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            #templatemo_content_bottom{
-                margin-left: 132px;
-            }
-        </style>
-
     </h:head>
     <h:body>
         <div id="templatemo_menu">
             <ul>
-                <li><h:link>Home</h:link></li>
+                <li><h:link outcome="index">Home</h:link></li>
+                <li><h:link outcome="jobSeekerLogin">Login</h:link></li>
+                <li><h:link outcome="jobSeekerSignUp"> Sign up</h:link></li>
 
-                <li><h:link outcome="jobSeeker">Job Seeker</h:link></li>
-                <li><h:link outcome="recruiter">  Recruiter</h:link></li>
-                <li><h:link outcome="aboutUs">About Us</h:link></li>
-                <li><h:link>Email Us</h:link></li>
             </ul>    	
 
-        </div> 
+        </div>
 
         <div id="templatemo_site_title_bar_wrapper">
 
@@ -33,12 +24,12 @@
                 <div class="site_title_left">
 
                     <div id="site_title">
-                        <h1>
-                            <h:link>ONLINE RECRUITMENT
+                        <h1><h:link>ONLINE RECRUITMENT
                                 <span>get your dreams come true</span>
                             </h:link>
                         </h1>
                     </div>
+
                 </div>
 
                 <div class="site_title_right">
@@ -61,11 +52,10 @@
 
                     <div class="section_w860">	
                         <div class="section_w380 float_l">
-                            <h2>Welcome to E-Recruitment</h2>
-                            <div class="image_wrapper_01">
-                                <h:graphicImage value="/images/findjobs.jpg" alt="image" width="350" height="150" /></div>
+                            <h2>Welcome to Recruitment System</h2>
+                            <div class="image_wrapper_01"><h:graphicImage value="images/findjobs1.jpg" alt="image" width="350" height="350" /></div>
 
-                            <p>It is an online recruitment portal. Whether you're thinking about a new job, new career, a new city or a new direction... We help you explore the possibilities and find the opportunities that are right for you.</p></div>
+                        </div>
                         <div class="section_w380 float_r">
                             <h2>Exciting Features</h2>
                             <p>E-Recruitment bridges the gap between recruiters and the job seekers</p>
@@ -76,44 +66,25 @@
                                 <li>Quick response on submitted resume.</li>
 
                             </ul>
-                            <br>
-                            </br>
+                            <br>                    </br>
+
+                            <br>                    </br>
+
                             <p>Go ahead....Exciting future awaits you....</p>
                             <div class="cleaner_h20"></div>
+                            <div class="button_01"><a href="#">Read more</a></div>
                         </div>
                     </div>    
 
                     <div class="cleaner_h30 divider"></div>
                     <div class="cleaner_h30"></div>
 
-                    <div class="section_w860">
-
-                        <div class="section_w380 float_l">
-
-                            <h2>Job Seekers</h2><font color="black"/> 
-
-                            <div class="news_box">
-                                Search hundreds of thousands of jobs, build and post your resume and access thousands of pages of career info and advice</div>
-
-                        </div>
-
-                        <div class="section_w380 float_r">
-
-                            <h2>Employers</h2><font color="black">
-
-                                Get instant access to today's most powerful hiring tools - post jobs, search resumes, screen candidates and streamline your entire hiring process	</font>
-                        </div>        
-                        <div class="cleaner_h10"></div>
-
-
-                    </div>
-
                 </div>
 
-                <div class="cleaner"></div>        
-            </div>
+                <div id="templatemo_content_bottom"></div>
 
-            <div id="templatemo_content_bottom"></div>
+
+            </div> 
 
         </div> 
 
@@ -124,15 +95,16 @@
 
                 <div class="section_w280">
 
+
                     <h3>For Job Seekers</h3>
 
                     <div class="sub_content">
 
                         <ul class="footer_list">
-                            <li><h:link>Home</h:link></li>
+                            <li><h:link outcome="index">Home</h:link></li>
                             <li><h:link outcome="jobSeeker">Job Seeker</h:link></li>
-                            <li><h:link outcome="jobSeekerSignUp">Sign up</h:link></li>
-                            <li><h:link outcome="jobSeekerLogin">Login</h:link></li>              
+                            <li><h:link  outcome="jobSeekerSignUp">Sign up</h:link></li>
+                            <li><h:link  outcome="jobSeekerLogin">Login</h:link></li>              
                         </ul>
 
                     </div>
@@ -167,10 +139,9 @@
 
                 <div class="cleaner_h40"></div>
 
-            </div>
+
+            </div> 
         </div>
-
-
     </h:body>
 </html>
 
