@@ -681,7 +681,7 @@ h3 {
     width:194px; 
     height:18px; 
     z-index:8;
-    margin-left: 208px;
+    margin-left: 325px;
 }
 .txtjsrphone{ 
     margin-top: 233px;
@@ -706,10 +706,10 @@ h3 {
     margin-top: 165px;
 }
 .txtjsrfname{ 
-    margin-left: 208px;
+    margin-left: 325px;
 }
 .txtjsrlname{ 
-    margin-left: 310px;
+    margin-left: 425px;
 }
 
 .btnjsrupload, .btnjsrback{
@@ -739,15 +739,15 @@ h3 {
 }
 .lbljssjexp{
     margin-top: 90px;
-    margin-left: -135px;
+    margin-left: -15px;
 }
 .lbljssjskills{
     margin-top: 90px;
-    margin-left: 65px;
+    margin-left: 180px;
 }
 .lbljssjqua{
     margin-top: 90px;
-    margin-left: 380px;
+    margin-left: 460px;
 }
 /** Job Seeker View Job **/
 .lbljsvjcname,.lbljsvjcaddress,.lbljsvjcemail,
@@ -759,7 +759,7 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-    left: 515px;
+    left: 400px;
 }
 .lbljsvjcname{
     top: 460px;
@@ -830,10 +830,10 @@ h3 {
     top:735px; 
 }
 .btnjsvjapply{
-    left:720px;  
+    left:605px;  
 }
 .btnjsvjback{
-    left:800px;  
+    left:690px;  
 }
 #view{
     text-align: center;
@@ -849,7 +849,7 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-    left: 515px;
+    left: 400px;
 }
 .lbladdvcname{
     top: 450px;
@@ -902,13 +902,13 @@ h3 {
     top: 627px;
 }
 .select11{
-    left: 722px;
+    left: 605px;
 }
 .select12{
-    left: 797px;
+    left: 682px;
 }
 .select13{
-    left: 872px;
+    left: 758px;
 }
 .btnaddvadd,.btnaddvback{
     position:absolute; 
@@ -919,10 +919,10 @@ h3 {
     top:660px; 
 }
 .btnaddvadd{
-    left:720px;  
+    left:605px;  
 }
 .btnaddvback{
-    left:800px;  
+    left:685px;  
 }
 #add{
     text-align: center;
@@ -939,7 +939,7 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-        left: 510px;
+        left: 400px;
 }
 .lbljsvrposition{
 
@@ -1050,11 +1050,6 @@ h3 {
     margin-left: 450px;
 }
 
-
-
-
-
-
 .btnjsvrback{
     position:absolute; 
     overflow:hidden; 
@@ -1064,7 +1059,7 @@ h3 {
 }
 .btnjsvrback{
     top:900px; 
-    left:722px;  
+    left:602px;  
 }
 
 

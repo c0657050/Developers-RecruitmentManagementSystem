@@ -105,7 +105,7 @@ public class JobController {
         if (i > 0) {
             return "jobSeekerViewAllJobs";
         } else {
-            return "addVacancy";
+            return "recruiterAddJobs";
         }
     }
 
