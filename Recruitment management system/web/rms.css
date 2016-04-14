@@ -482,7 +482,7 @@ h3 {
     height:18px; 
     z-index:8;
     font-size: 15px;    
-    left:425px;
+    left:540px;
     text-align: right;
     }
 .lbljsname{
@@ -616,66 +616,55 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
+    left: 490px;
 }
 .lbljsrposition{
-    left: 375px;
     top: 480px;
 }
 
 .lbljsrplocation{
-    left: 375px;
     top: 515px;
 }
 
 .lbljsrname{
-    left: 375px;
     top: 550px;
 }
 .lbljsrgender{
-    left: 375px;
     top: 585px;
 }
 
 .lbljsrphone{
-    left: 375px;
     top:620px; 
-
 }
 
 .lbljsremail{
-    left: 375px;
     top:655px; 
 }
 
 .lbljsraointerest{
-    left: 375px;
     top:690px; 
 }
 
 .lbljsrpskills{
-    left: 375px;
     top:725px; 
 }
 
 .lbljsrtexperience{
-    left: 375px;
     top: 760px;
 }
 .lbljsrclocation{
-    left: 375px;
     top: 795px;
 }
 .lbljsrhqualification{
-    left: 375px;
     top: 830px;
 }
 .lbljsryopassing{
-    left: 375px;
     top: 865px;
 }
 
-.txtjsrfname,.txtjsrlname,.txtjsrphone,
-.txtjsremail,.txtjsrpskills,.txtjsrclocation{
+.txtjsrposition,.txtjsrpLocation,.txtjsrgender,.txtjsrphone,
+.txtjsremail,.txtjsraointerest,.txtjsrpskills,.txtjsrhqualification,
+.txtjsrclocation,.txtjsrexperience,.txtjsryopassing{
     position:absolute; 
     overflow:hidden; 
     width:194px; 
@@ -683,17 +672,39 @@ h3 {
     z-index:8;
     margin-left: 325px;
 }
+.txtjsrposition{
+    margin-top: 100px;
+}
+.txtjsrpLocation{
+    margin-top: 132px;
+}
+.txtjsrgender{
+    margin-top: 200px;
+}
+
 .txtjsrphone{ 
     margin-top: 233px;
 }
 .txtjsremail{ 
     margin-top: 268px;
 }
+.txtjsraointerest{
+    margin-top: 301px;
+}
 .txtjsrpskills{ 
     margin-top: 338px;
 }
+.txtjsrhqualification{
+    margin-top: 375px;
+}
 .txtjsrclocation{ 
     margin-top: 410px;
+}
+.txtjsrexperience{
+    margin-top: 445px;
+}
+.txtjsryopassing{
+    margin-top: 480px;
 }
 
 
@@ -721,12 +732,18 @@ h3 {
 }
 .btnjsrupload{
     top:900px; 
-    left:580px;  
+    left:695px;  
 }
 .btnjsrback{
     top:900px; 
-    left:660px;  
+    left:785px;  
 }
+#FR{
+    margin-left: 200px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
 /* Job Seeker  Searchy Job */
 .lbljssjexp, .lbljssjskills,.lbljssjqua{
     position:absolute; 
@@ -1080,41 +1097,6 @@ h3 {
 }
 .select3{
     left: 850px;
-}
-.select4, .select5, .select6, .select7, .select8, .select9, .select10{
-    position:absolute; 
-    overflow:hidden; 
-    width:200px; 
-    height:25px; 
-    z-index:8;
-}
-.select4{
-    left: 580px;
-    top: 480px;
-}
-.select5{
-    left: 580px;
-    top: 515px;
-}
-.select6{
-    left: 580px;
-    top: 580px;
-}
-.select7{
-    left: 580px;
-    top: 685px;
-}
-.select8{
-    left: 580px;
-    top: 828px;
-}
-.select9{
-    left: 580px;
-    top: 758px;
-}
-.select10{
-    left: 580px;
-    top: 865px;
 }
 
 
