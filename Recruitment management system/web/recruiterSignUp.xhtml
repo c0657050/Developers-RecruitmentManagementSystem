@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Online Recruitment</title>
+        <link href="rms.css" rel="stylesheet" type="text/css" />
+
+    </h:head>
+    <h:body>
+        <div id="templatemo_menu">
+            <ul>
+                <li><h:link outcome="index">Home</h:link></li>
+                <li><h:link outcome="recruiterLogin">Login</h:link></li>
+                <li><h:link>Sign Up</h:link></li>
+            </ul>    	
+        </div>
+        <div id="templatemo_site_title_bar_wrapper">
+
+            <div id="templatemo_site_title_bar">
+
+                <div class="site_title_left">
+
+                    <div id="site_title">
+                        <h1><h:link outcome="index">ONLINE RECRUITMENT
+                                <span>get your dreams come true</span></h:link>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="site_title_right">
+                <div id="head1" style="position:absolute; overflow:hidden; left:813px; top:111px; width:400px; height:253px; z-index:0">
+                    <h2><font color = "White">Where luck meets opportunity</font></h2>
+
+                </div>
+                <div id="templatemo_content_wrapper_outter">
+
+                    <div id="templatemo_content_wrapper_inner">
+
+                        <div id="templatemo_content_top"></div>
+
+                        <div id="templatemo_content">
+
+                            <div class="section_w860">	
+                                <div class="section_w380 float_l">
+                                    <h:form>
+
+                                        <h:outputLabel for="rfname" class="rsfname" >First Name</h:outputLabel>
+                                        <h:inputText class="txtrsfname" value="#{recruiterController.r.firstName}"/>
+
+                                        <h:outputLabel for="rslname" class="rslname">Last Name</h:outputLabel>
+                                        <h:inputText class="txtrslname" value="#{recruiterController.r.lastName}"/>
+
+                                        <h:outputLabel for="rscname" class="rscname">Company Name</h:outputLabel>
+                                        <h:inputText class="txtrscname" value="#{recruiterController.r.company}"/>
+
+                                        <h:outputLabel for="rsaddress" class="rsaddress">Address</h:outputLabel>
+                                        <h:inputText class="txtrscaddress" value="#{recruiterController.r.address}"/>
+
+                                        <h:outputLabel for="rspnumber" class="rspnumber">Phone Number</h:outputLabel>
+                                        <h:inputText class="txtrspnumber" value="#{recruiterController.r.phone}"/>
+
+                                        <h:outputLabel for="rsemail" class="rsemail">Email</h:outputLabel>
+                                        <h:inputText class="txtrsemail" value="#{recruiterController.r.email}"/>
+
+                                        <h:outputLabel for="rsuname" class="rsuname">User Name</h:outputLabel>
+                                        <h:inputText class="txtrsuname" value="#{recruiterController.r.username}"/>
+
+                                        <h:outputLabel for="rspassword" class="rspasswerd">Password</h:outputLabel>
+                                        <h:inputSecret class="txtrspassword" value="#{recruiterController.r.password}"/>
+
+                                        <h:outputLabel for="rscpassword" class="rscpassword">Confirm Password</h:outputLabel>
+                                        <h:inputSecret class="txtrscpassword" value="#{recruiterController.r.confirmPassword}"/>
+
+                                        <h:commandButton value="Register" action="#{recruiterController.addRecruiter()}" class ="btnrslogin" />
+                                        <h:commandButton value="Back" class ="btnrsback"/>
+
+                                    </h:form>
+
+                                </div>
+                                <div class="section_w380 float_r">
+                                    <div id="HEAD2" style="position:absolute; overflow:hidden; left:503px; top:400px; width:400px; height:253px; z-index:0">
+                                        <h2>RECRUITER REGISTER</h2></div>        
+
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>                    
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>                    
+                                    <div class="cleaner_h20"></div>
+
+                                </div>
+                            </div>    
+                            <div class="cleaner_h30 divider"></div>
+
+
+                            <div class="cleaner"></div>        
+                        </div>
+
+                        <div id="templatemo_content_bottom"></div>
+
+
+
+                    </div>
+
+                </div> 
+                <div id="templatemo_footer_wrapper">
+
+                    <div id="templatemo_footer">
+
+                        <div class="section_w280">
+
+                            <h3>For Job Seekers</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link outcome="index">Home</h:link></li>
+                                    <li><h:link outcome="jobSeeker">Candidate</h:link></li>
+                                    <li><h:link outcome="jobSeekerSignUp">Sign Up</h:link></li>
+                                    <li><h:link outcome="jobSeekerLogin">LogIn</h:link></li>              
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>For Recruiters</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link outcome="index">Home</h:link></li>
+                                    <li><h:link outcome="recruiter">Recruiter</h:link></li>
+                                    <li><h:link>Sign Up</h:link></li>
+                                    <li><h:link outcome="recruiterLogin">LogIn</h:link></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">   
+                            <h3>Privacy Policy</h3>                
+                        </div>
+
+                        <div class="cleaner_h40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>

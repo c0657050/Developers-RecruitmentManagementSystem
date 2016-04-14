@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Online Recruitment</title>
+        <link href="rms.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+        <div id="templatemo_menu">
+            <ul>
+                <li><h:link outcome="recruiterLoggedIn">Home</h:link></li>
+                <li><h:link outcome="recruiterAddJobs">Add Jobs</h:link></li>
+                <li><h:link>View Jobs</h:link></li>
+                 <li><h:link  outcome="recruiterViewAllJobSeeker">View Job Seekers</h:link></li>
+                <li><h:link  outcome="recruiterDeleteJobs">Delete Jobs</h:link></li>
+                <li><h:link outcome="index">Log Out</h:link></li>
+            </ul>    	
+        </div>
+        <div id="templatemo_site_title_bar_wrapper">
+
+            <div id="templatemo_site_title_bar">
+
+                <div class="site_title_left">
+
+                    <div id="site_title">
+                        <h1><h:link outcome="index">ONLINE RECRUITMENT
+                                <span>get your dreams come true</span></h:link>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="site_title_right">
+                <div id="head1" style="position:absolute; overflow:hidden; left:813px; top:111px; width:400px; height:253px; z-index:0">
+                    <h2><font color = "White">Where luck meets opportunity</font></h2>
+
+                </div>
+                <div id="templatemo_content_wrapper_outter">
+
+                    <div id="templatemo_content_wrapper_inner">
+
+                        <div id="templatemo_content_top"></div>
+
+                        <div id="templatemo_content">
+
+                            <div class="section_w860">	
+                                <div class="section_w380 float_l">
+                                </div>
+                                <div class="section_w380 float_r">
+                                    <div id="HEAD2" style="position:absolute; overflow:hidden; left:350px; top:400px; width:600px; height:53px; z-index:0">
+                                        <h2>ALL JOBS: </h2></div>
+            <h:dataTable 
+            styleClass="Table"
+            headerClass="Header"
+            rowClasses="Row"
+            columnClasses="column1,column2,column3,column4,column5,column6,column7"
+            value="#{jobController.jobs}" var="job">
+            
+                <h:column id="th" headerClass="th">
+                <f:facet name="header">Company</f:facet>
+                    <h:form> 
+                        <h:commandLink action="#{jobController.viewJob(job)}">#{job.company} </h:commandLink>    
+                    </h:form> 
+            </h:column>
+            <h:column headerClass="th">
+               <f:facet name="header">Address</f:facet>
+               #{job.address}
+            </h:column>
+            <h:column headerClass="th">
+               <f:facet name="header">Email</f:facet>
+              #{job.email}
+            </h:column>        
+            <h:column headerClass="th">
+               <f:facet name="header">Contact</f:facet>
+               #{job.contact}
+            </h:column>        
+            <h:column headerClass="th">
+               <f:facet name="header">Location</f:facet>
+               #{job.location}
+            </h:column>        
+            <h:column headerClass="th">
+               <f:facet name="header">Experience</f:facet>
+               #{job.experience}
+            </h:column>
+            <h:column headerClass="th">
+               <f:facet name="header">Skills</f:facet>
+               #{job.skills}
+            </h:column>
+            <h:column>
+                <h:form>
+                  <f:facet name="header">Edit</f:facet>
+           
+                  
+                </h:form>
+            </h:column>
+        </h:dataTable>
+
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                    <div class="cleaner_h20"></div>
+                                </div>
+                            </div>    
+
+                            <div class="cleaner_h30 divider"></div>
+
+                            <div class="cleaner"></div>        
+                        </div>
+
+                        <div id="templatemo_content_bottom"></div>
+
+                    </div>
+
+                </div> 
+
+                 </div>
+                <div id="templatemo_footer_wrapper">
+
+                    <div id="templatemo_footer">
+
+                        <div class="section_w280">
+
+                            <h3>For Job Seekers</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link>Home</h:link></li>
+                                    <li><h:link> Job Seeker</h:link></li>
+                                    <li><h:link>Sign up</h:link></li>
+                                    <li><h:link>LogIn</h:link></li>              
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>For Recruiters</h3>
+
+                            <div class="sub_content">
+
+                                <ul class="footer_list">
+                                    <li><h:link outcome="recruiterLoggedIn">Home</h:link></li>
+                                    <li><h:link outcome="recruiterAddJobs">Add Jobs</h:link></li>
+                                    <li><h:link>View Jobs</h:link></li>
+                                     <li><h:link  outcome="recruiterViewAllJobSeeker">View Job Seekers</h:link></li>
+                                    <li><h:link  outcome="recruiterDeleteJobs">Delete Jobs</h:link></li>
+                                    <li><h:link outcome="index">Log Out</h:link></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="section_w280">
+
+                            <h3>Privacy Policy</h3>
+
+                            <div class="sub_content">
+                            </div>
+
+                        </div>
+
+                        <div class="cleaner_h40"></div>
+                    </div>
+				</div>
+			</div>
+       
+    </h:body>
+</html>

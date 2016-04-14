@@ -4,29 +4,25 @@
  * and open the template in the editor.
  */
 package beans;
-
 import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-
 /**
  *
- * @author c0657966
+ * @author c0657050
  */
 @ManagedBean
 @ApplicationScoped
-public class JobSeekerLogin {
+public class RecruiterLogin {
     private String username;
     private String password;
     private boolean loggedIn;
-    private JobSeeker currentJobSeeker;
+    private JobSeeker currentRecruiter;
     int i;
     
    
@@ -35,18 +31,18 @@ public class JobSeekerLogin {
      * No-arg constructor -- establishes as not logged in
      */
     
-    public JobSeekerLogin() {
+    public RecruiterLogin() {
         username = null;
         password = null;
         loggedIn = false;
-        currentJobSeeker = null;
+        currentRecruiter = null;
     }
 
-    public JobSeekerLogin(String username, String password, boolean loggedIn) {
+    public RecruiterLogin(String username, String password, boolean loggedIn) {
         this.username = username;
         this.password = password;
         this.loggedIn = loggedIn;
-        this.currentJobSeeker = currentJobSeeker;
+        this.currentRecruiter = currentRecruiter;
     }
 
    
@@ -78,33 +74,27 @@ public class JobSeekerLogin {
   
   public JobSeeker getCurrentJobSeeker(){
       
-       return currentJobSeeker;
+       return currentRecruiter;
    }
   
     
     public String login() {
         try (Connection conn = (Connection) DBUtils.getConnection()) {
-            String sql = "SELECT * FROM jobseekers WHERE username=? and password=?";
+            String sql = "SELECT * FROM recruiters WHERE username=? and password=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
             pstmt.setString(2, password);
             ResultSet rs= pstmt.executeQuery();
             loggedIn = rs.next();
            } catch (SQLException ex) {
-            Logger.getLogger(JobSeekerController.class.getName()).log(Level.SEVERE, null, ex);
-             return "jsLoggedIn";
+            Logger.getLogger(RecruiterController.class.getName()).log(Level.SEVERE, null, ex);
+             
            }
          
         if(i>0){
-            return "jsLoggedIn";
+            return "recruiterLoggedIn";
         }else{
-            return "jsLoggedIn";
+            return "recruiterLoggedIn";
         }
     }
 }
-        
-    
-
-       
-    
-

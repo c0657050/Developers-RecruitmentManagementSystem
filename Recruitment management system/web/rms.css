@@ -1,0 +1,1242 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Apr-2016, 2:26:17 AM
+    Author     : c0657050
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.7em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #161d1e;
+    background: #566977 url(images/templatemo_body_top.png) repeat-x top;
+}
+
+h:link, a:visited { color: #5b0b01; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #CC00FF; text-decoration: underline; }
+
+p { margin: 0px; padding: 0px; }
+
+img { margin: 0px; padding: 0px; border: none; }
+
+.float_l {
+	float: left;
+}
+
+.float_r {
+	float: right;
+}
+
+.divider {
+	background: url(images/divider.jpg) repeat-x bottom;
+}
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.button_01 a{
+	display: block;
+	width: 70px;
+	height: 22px;
+	padding: 5px 2px 0 30px;
+	
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	background: url(images/templatemo_button_01.png) no-repeat;
+}
+
+.button_01 a:hover {
+	color: #ffffff;
+	background: url(images/templatemo_button_01_hover.png) no-repeat;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 10px 0;
+	font-size: 24px;
+	font-weight: normal;
+	color: #5b0b01;
+}
+
+h3 {
+	margin: 0	;
+	padding: 2px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* menu */
+
+#templatemo_menu {
+	width: 940px;
+	height: 59px;
+	margin: 0 auto;
+	padding: 0 40px;
+	background: url(images/templatemo_menu_bg.jpg) no-repeat center top;
+}
+
+#templatemo_menu ul {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#templatemo_menu ul li{
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#templatemo_menu ul li a{
+	position: relative;
+	float: left;
+	width: 100px;
+	display: block;
+	height: 40px;
+	padding: 19px 0 0 0;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	color: #ca9b95;	
+	font-weight: bold;
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+	color: #ffffff;
+	background: url(images/templatemo_menu_hover.jpg) no-repeat center bottom;
+}
+
+/* end of menu */
+
+/* site title */
+
+#templatemo_site_title_bar_wrapper {
+	width: 100%;
+	height: 240px;
+	margin: 0 auto;
+	background: url(images/templatemo_header_bg_wrapper.jpg) no-repeat top center;
+}
+
+#templatemo_site_title_bar {
+	width: 900px;
+	height: 210px;
+	margin: 0 auto;
+	padding: 15px 50px;
+	background: url(images/templatemo_header_bg.jpg) no-repeat top center;
+}
+
+#templatemo_site_title_bar .site_title_left {
+	float: left;
+	width: 400px;
+}
+
+#templatemo_site_title_bar .site_title_right {
+	float: right;
+	width: 380px;
+	margin-top: 30px;
+	text-align: right;
+}
+
+.site_title_right h2 a{
+	color: #63b5dc;
+	font-style: normal;
+}
+
+.site_title_right p {
+	color: #3a8fb8;
+}
+
+#templatemo_site_title_bar  #site_title {
+	float: left;
+	padding: 30px 0 0 0;
+}
+
+#site_title h1 a{
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#site_title h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#site_title h1 a span {
+	display: block;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 14px;
+	color: #486c7c;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+
+#templatemo_site_title_bar #search_box {
+	float: left;
+	width: 270px;
+	height: 27px;
+	margin: 30px 0 0 0; 
+	padding: 0;
+	background: url(images/templatemo_search.png) no-repeat;
+}
+
+#search_box form {
+	width: 270px;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+}
+
+#searchfield {
+	height: 18px;
+	width: 170px;
+	padding: 6px 5px 4px 5px;
+	margin: 0 5px 0 0;
+	color: #ffffff;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+	background: none;
+	border: none;	
+}
+
+#searchbutton {
+ 	height: 27px;
+	width: 80px;
+	margin: 0px;
+	padding: 6px 0 0 0;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	color: #ffffff;
+	background: none; 
+	border: none;
+}
+/* end of site title */
+
+#templatemo_content_wrapper_outter {
+	clear: both;
+	width: 100%;
+	padding: 30px 0;
+	background: url(images/templatemo_content_bg.jpg) repeat;	
+}
+
+#templatemo_content_wrapper_inner {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	background: url(images/templatemo_content_wrapper.png) top center no-repeat;	
+}
+
+#templatemo_content_top{
+	width: 1000px;
+	height: 35px;
+	background:url(images/templatemo_main_content_top.png) bottom center no-repeat;
+}
+
+#templatemo_content{
+	width: 840px;
+	padding: 0 80px;
+        background: url(images/templatemo_main_content_middle.png) center repeat-y;
+}
+
+#templatemo_content_bottom{
+	width: 1000px;
+	height: 35px;
+	background:url(images/templatemo_main_content_bottom.png) top center no-repeat;
+}
+
+.section_w860 {
+	clear: both;
+	width: 840px;
+}
+
+.image_wrapper_01 img{
+	margin-bottom: 10px;
+	border: 7px solid #cdd8e1;
+}
+
+.section_w380 {
+	width: 380px;
+}
+
+.service {
+	margin: 15px 0 0 20px;
+	padding: 0px;
+	list-style-image: url(images/templatemo_list_icon.png);
+}
+
+.service li {
+	margin: 0;
+	padding: 0 0 10px 15px;
+}
+
+.news_box{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #8a9ba8;	
+	color: #ffffff;
+}
+
+.news_box .post_info {
+	color: #666666;
+}
+
+.news_box .post_info a{
+	color: #2872ab;
+	font-weight: bold;
+}
+
+.news_box .post_info strong {
+	color: #2872ab;
+}
+
+.news_box a{
+	color: #000000;
+}
+
+.btn5{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+}
+
+
+.btn5{
+    left:630px;
+    top:570px;
+    z-index:3;
+}
+
+/**Recruiter SignUp Form**/
+.rsfname, .rslname, .rscname,
+.rsaddress, .rspnumber, .rsemail, 
+.rsuname, .rspasswerd, .rscpassword{    
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    font-size: 15px;   
+    margin-left: 150px;
+    text-align: right;
+}
+.rsfname{
+    margin-top:98px;
+}
+.rslname{
+    margin-top:130px;
+}
+.rscname{
+    margin-top:165px;
+}
+.rsaddress{
+    margin-top:200px;
+}
+.rspnumber{
+    margin-top:235px;
+}
+.rsemail{
+    margin-top:270px;
+}
+.rsuname{
+    margin-top:305px;
+}
+.rspasswerd{
+    margin-top:340px;
+}
+.rscpassword{
+    margin-top:375px;
+}
+
+.txtrsfname,.txtrslname,.txtrscname,
+.txtrscaddress,.txtrspnumber,.txtrsemail,
+.txtrsuname,.txtrspassword,.txtrscpassword    {
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+}
+.txtrsfname{
+    margin: 95px auto auto 360px;
+
+}
+.txtrslname{
+    margin: 130px auto auto 360px;
+}
+.txtrscname{
+    margin: 165px auto auto 360px;
+}
+.txtrscaddress{
+    margin: 195px auto auto 360px;    
+}
+.txtrspnumber{
+    margin: 230px auto auto 360px;    
+}
+.txtrsemail{
+    margin: 265px auto auto 360px;
+}
+.txtrsuname{
+    margin: 300px auto auto 360px;
+}
+.txtrspassword{
+    margin: 335px auto auto 360px;
+}
+.txtrscpassword{
+    margin: 370px auto auto 360px;    
+}
+.btnrslogin,.btnrsback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    width: 80px;
+}
+.btnrslogin{
+    margin: 400px auto auto 360px;    
+}
+.btnrsback{
+    margin: 400px auto auto 445px;
+}
+
+.lblrLuname, .lblrLpassword{
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    font-size: 15px;    
+    text-align: right;
+    margin-left:55px;
+}
+.lblrLuname{
+    top:478px; 
+
+}
+.lblrLpassword{
+    top:513px; 
+}
+.txtrLusername,.txtrLpassword{
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    left:630px;
+}
+.txtrLusername{ 
+    top:477px; 
+ 
+}
+.txtrLpassword{ 
+    top:510px; 
+}
+
+.btnrLlogin,.btnrLback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    top:547px; 
+}
+.btnrLlogin{
+
+     left:628px; 
+}
+.btnrLback{
+    left:690px; 
+}
+/** Job Seeker Registration Form**/
+ .lbljsname,.lbljsaddress,.lbljspnumber,
+ .lbljsemail,.lbljsusername,.lbljspassword,.lbljscpassword {
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    font-size: 15px;    
+    left:425px;
+    text-align: right;
+    }
+.lbljsname{
+    top:480px; 
+ 
+}
+.lbljsaddress{
+    top:515px; 
+
+}
+
+.lbljspnumber{
+    top:550px; 
+
+}
+.lbljsemail{
+    top:585px; 
+
+}
+.lbljsusername{
+    top:620px; 
+
+}
+.lbljspassword{
+    top:655px; 
+
+}
+.lbljscpassword{
+    top:690px; 
+}
+
+.txtjsname,.txtjsaddress,.txtjspnumber, 
+.txtjsemail, .txtjsusername, .txtjspassword,.txtjscpassword{
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    margin-left:  375px;
+}
+.txtjsname{
+    margin-top: 92px; 
+}
+.txtjsaddress{
+    margin-top: 127px;
+}
+.txtjspnumber{
+    margin-top: 162px;
+}
+.txtjsemail{
+    margin-top: 198px
+}
+.txtjsusername{
+    margin-top: 233px;
+}
+.txtjspassword{
+    margin-top: 268px;
+}
+.txtjscpassword{
+    margin-top: 303px;
+}
+.btnjssubmit,.btnjsback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    margin-top: 340px;
+    width: 70px;
+}
+.btnjssubmit{
+    margin-left: 375px;
+}
+.btnjsback{
+    margin-left: 450px;
+}
+
+.lbljsLuname, .lbljsLpassword{
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    font-size: 15px;    
+    text-align: right;
+}
+.lbljsLuname{
+    top:480px; 
+    margin-left:425px;
+}
+.lbljsLpassword{
+    top:515px; 
+    margin-left:425px;
+}
+.txtjsLusername,.txtjsLpassword{
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+    left:630px;
+}
+.txtjsLusername{ 
+    top:477px; 
+ 
+}
+.txtjsLpassword{ 
+    top:510px; 
+}
+
+.btnjsLlogin,.btnjsLback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    top:547px; 
+}
+.btnjsLlogin{
+
+     left:628px; 
+}
+.btnjsLback{
+    left:695px; 
+}
+/** Job Seeker Resume**/
+.lbljsrposition, .lbljsrplocation,.lbljsrname,.lbljsrgender,
+.lbljsrphone,.lbljsremail,.lbljsraointerest,.lbljsrpskills,.lbljsrtexperience,
+.lbljsrclocation,.lbljsrhqualification,.lbljsryopassing{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+    text-align: right;
+}
+.lbljsrposition{
+    left: 375px;
+    top: 480px;
+}
+
+.lbljsrplocation{
+    left: 375px;
+    top: 515px;
+}
+
+.lbljsrname{
+    left: 375px;
+    top: 550px;
+}
+.lbljsrgender{
+    left: 375px;
+    top: 585px;
+}
+
+.lbljsrphone{
+    left: 375px;
+    top:620px; 
+
+}
+
+.lbljsremail{
+    left: 375px;
+    top:655px; 
+}
+
+.lbljsraointerest{
+    left: 375px;
+    top:690px; 
+}
+
+.lbljsrpskills{
+    left: 375px;
+    top:725px; 
+}
+
+.lbljsrtexperience{
+    left: 375px;
+    top: 760px;
+}
+.lbljsrclocation{
+    left: 375px;
+    top: 795px;
+}
+.lbljsrhqualification{
+    left: 375px;
+    top: 830px;
+}
+.lbljsryopassing{
+    left: 375px;
+    top: 865px;
+}
+
+.txtjsrfname,.txtjsrlname,.txtjsrphone,
+.txtjsremail,.txtjsrpskills,.txtjsrclocation{
+    position:absolute; 
+    overflow:hidden; 
+    width:194px; 
+    height:18px; 
+    z-index:8;
+    margin-left: 208px;
+}
+.txtjsrphone{ 
+    margin-top: 233px;
+}
+.txtjsremail{ 
+    margin-top: 268px;
+}
+.txtjsrpskills{ 
+    margin-top: 338px;
+}
+.txtjsrclocation{ 
+    margin-top: 410px;
+}
+
+
+.txtjsrfname,.txtjsrlname{
+    position:absolute; 
+    overflow:hidden; 
+    width:92px; 
+    height:18px; 
+    z-index:8;
+    margin-top: 165px;
+}
+.txtjsrfname{ 
+    margin-left: 208px;
+}
+.txtjsrlname{ 
+    margin-left: 310px;
+}
+
+.btnjsrupload, .btnjsrback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    width: 80px;
+}
+.btnjsrupload{
+    top:900px; 
+    left:580px;  
+}
+.btnjsrback{
+    top:900px; 
+    left:660px;  
+}
+/* Job Seeker  Searchy Job */
+.lbljssjexp, .lbljssjskills,.lbljssjqua{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+    text-align: right;
+    font-size: 1.5em;
+}
+.lbljssjexp{
+    margin-top: 90px;
+    margin-left: -135px;
+}
+.lbljssjskills{
+    margin-top: 90px;
+    margin-left: 65px;
+}
+.lbljssjqua{
+    margin-top: 90px;
+    margin-left: 380px;
+}
+/** Job Seeker View Job **/
+.lbljsvjcname,.lbljsvjcaddress,.lbljsvjcemail,
+.lbljsvjcnumber,.lbljsvjjlocation,.lbljsvjjspecification,
+.lbljsvjexperience,.lbljsvjskills{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+    text-align: right;
+    left: 515px;
+}
+.lbljsvjcname{
+    top: 460px;
+}
+.lbljsvjcaddress{
+    top: 495px;
+}
+.lbljsvjcemail{
+    top: 530px;
+}
+.lbljsvjcnumber{
+    top: 565px;    
+}
+.lbljsvjjlocation{
+    top: 600px;
+}
+.lbljsvjjspecification{
+    top: 635px;
+}
+.lbljsvjexperience{
+    top: 670px;
+}
+.lbljsvjskills{
+    top: 705px;
+}
+
+.txtjsvjcname,.txtjsvjcaddress,.txtjsvjcemail,
+.txtjsvjcnumber,.txtjsvjjlocation,.txtjsvjjspecification,
+.txtjsvjexperience,.txtjsvjskills{
+    position:absolute; 
+    overflow:hidden; 
+    width:220px; 
+    height:18px; 
+    z-index:8;
+    margin-left: 350px;
+}
+.txtjsvjcname{ 
+    top: 456px;
+}
+.txtjsvjcaddress{ 
+    top: 491px;
+}
+.txtjsvjcemail{ 
+    top: 526px;
+}
+.txtjsvjcnumber{ 
+    top: 561px;
+}
+.txtjsvjjlocation{ 
+    top: 596px;
+}
+.txtjsvjjspecification{
+    top: 631px;
+}
+.txtjsvjexperience{
+    top: 666px;    
+}
+.txtjsvjskills{
+    top: 701px;    
+}
+
+.btnjsvjapply,.btnjsvjback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    width: 75px;
+    top:735px; 
+}
+.btnjsvjapply{
+    left:720px;  
+}
+.btnjsvjback{
+    left:800px;  
+}
+#view{
+    text-align: center;
+    margin-left: 220px;
+    font-size: 2em; 
+}
+/** Add Vacancy***/
+.lbladdvcname,.lbladdvcaddress,.lbladdvcemail,
+.lbladdvcnumber,.lbladdvjlocation,.lbladdvjspecification{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+    text-align: right;
+    left: 515px;
+}
+.lbladdvcname{
+    top: 450px;
+}
+.lbladdvcaddress{
+    top: 485px;
+}
+.lbladdvcemail{
+    top: 520px;
+}
+.lbladdvcnumber{
+    top: 555px;    
+}
+.lbladdvjlocation{
+    top: 590px;
+}
+.lbladdvjspecification{
+    top: 625px;
+}
+.txtaddvcname,.txtaddvcaddress,.txtaddvcemail,
+.txtaddvcnumber,.txtaddvjlocation{
+    position:absolute; 
+    overflow:hidden; 
+    width:220px; 
+    height:18px; 
+    z-index:8;
+    margin-left: 350px;
+}
+.txtaddvcname{ 
+    top: 448px;
+}
+.txtaddvcaddress{ 
+    top: 483px;
+}
+.txtaddvcemail{ 
+    top: 518px;
+}
+.txtaddvcnumber{ 
+    top: 553px;
+}
+.txtaddvjlocation{ 
+    top: 588px;
+}
+.select11, .select12, .select13{
+    position:absolute; 
+    overflow:hidden; 
+    width:73px; 
+    height:20px; 
+    z-index:8;
+    top: 627px;
+}
+.select11{
+    left: 722px;
+}
+.select12{
+    left: 797px;
+}
+.select13{
+    left: 872px;
+}
+.btnaddvadd,.btnaddvback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    width: 75px;
+    top:660px; 
+}
+.btnaddvadd{
+    left:720px;  
+}
+.btnaddvback{
+    left:800px;  
+}
+#add{
+    text-align: center;
+    margin-left: 280px;
+    font-size: 2.3em; 
+}
+/** Recruiter View Resume**/
+.lbljsvrposition, .lbljsvrplocation,.lbljsvrname,.lbljsvrgender,
+.lbljsvrphone,.lbljsvremail,.lbljsvraointerest,.lbljsvrpskills,.lbljsvrtexperience,
+.lbljsvrclocation,.lbljsvrhqualification,.lbljsvryopassing{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+    text-align: right;
+        left: 510px;
+}
+.lbljsvrposition{
+
+    top: 480px;
+}
+
+.lbljsvrplocation{
+
+    top: 515px;
+}
+
+.lbljsvrname{
+
+    top: 550px;
+}
+.lbljsvrgender{
+
+    top: 585px;
+}
+
+.lbljsvrphone{
+    top:620px; 
+
+}
+
+.lbljsvremail{
+    top:655px; 
+}
+
+.lbljsvraointerest{
+    top:690px; 
+}
+
+.lbljsvrpskills{
+    top:725px; 
+}
+
+.lbljsvrtexperience{
+    top: 760px;
+}
+.lbljsvrclocation{
+    top: 795px;
+}
+.lbljsvrhqualification{
+    top: 830px;
+}
+.lbljsvryopassing{
+    top: 865px;
+}
+
+.txtjsvrposition,.txtjsvrplocation,.txtjsvrgender,
+.txtjsvrfname,.txtjsvrlname,
+.txtjsvrhqualification,.txtjsvrphone,
+.txtjsvremail,.txtjsvraointerest,.txtjsvrpskills,.txtjsvrtexperience,.txtjsvrclocation,.txtjsvryopassing{
+    position:absolute; 
+    overflow:hidden; 
+    width:194px; 
+    height:18px; 
+    z-index:8;
+    margin-left: 350px;
+}
+.txtjsvrposition{
+       margin-top: 95px;
+}
+.txtjsvrplocation{
+       margin-top: 130px;
+}
+.txtjsvrgender{
+    margin-top: 200px;
+}
+.txtjsvraointerest{
+    margin-top: 303px;
+}
+.txtjsvrphone{ 
+    margin-top: 233px;
+}
+.txtjsvremail{ 
+    margin-top: 268px;
+}
+.txtjsvrpskills{ 
+    margin-top: 338px;
+}
+.txtjsvrtexperience{
+    margin-top: 373px;
+}
+.txtjsvrclocation{ 
+    margin-top: 408px;
+}
+.txtjsvrhqualification{
+    margin-top: 443px;
+}
+.txtjsvryopassing{
+    margin-top: 478px;
+}
+
+.txtjsvrfname,.txtjsvrlname{
+    position:absolute; 
+    overflow:hidden; 
+    width:92px; 
+    height:18px; 
+    z-index:8;
+    margin-top: 165px;
+}
+.txtjsvrfname{ 
+    margin-left: 350px;
+}
+.txtjsvrlname{ 
+    margin-left: 450px;
+}
+
+
+
+
+
+
+.btnjsvrback{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    width: 80px;
+}
+.btnjsvrback{
+    top:900px; 
+    left:722px;  
+}
+
+
+/****/
+.select1, .select2,.select3{
+    top:500px; 
+    position:absolute; 
+    overflow:hidden; 
+    width:195px; 
+    height:18px; 
+    z-index:8;
+}
+.select1{
+    left: 350px;
+}
+.select2{
+    left: 600px; 
+}
+.select3{
+    left: 850px;
+}
+.select4, .select5, .select6, .select7, .select8, .select9, .select10{
+    position:absolute; 
+    overflow:hidden; 
+    width:200px; 
+    height:25px; 
+    z-index:8;
+}
+.select4{
+    left: 580px;
+    top: 480px;
+}
+.select5{
+    left: 580px;
+    top: 515px;
+}
+.select6{
+    left: 580px;
+    top: 580px;
+}
+.select7{
+    left: 580px;
+    top: 685px;
+}
+.select8{
+    left: 580px;
+    top: 828px;
+}
+.select9{
+    left: 580px;
+    top: 758px;
+}
+.select10{
+    left: 580px;
+    top: 865px;
+}
+
+
+/*job Searchy table*/
+.Table {
+    width:225%;
+    margin:71px -200px auto -484px;
+    
+}
+
+.th{
+    background-color:black;
+    color:white;
+    font-size:1.1em;
+    font-weight:bold;
+
+}
+
+.column1{
+    width:300px;
+       margin-top: 800px;
+}
+
+.column3{
+    width:150px;
+    
+}
+
+.column4{
+    width:350px;
+}
+
+.column5{
+    width:120px;
+    text-align:center;
+}
+
+.column6{
+    width:110px;
+    text-align:center;
+}
+
+tr{
+    height:35px;
+        margin-top: 800px;
+        width: 200px;
+}
+
+td{
+    text-indent:5px; 
+}
+
+a{
+    color:darkblue;
+    font-weight:bold; 
+    text-decoration:none;
+}
+
+th:nth-child(7){
+    display:none;
+}
+
+.column7{
+    display:none;
+}
+/* footer */
+
+#templatemo_footer_wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0;
+	background: url(images/templatemo_footer_bg.jpg) repeat-x top;
+}
+
+#templatemo_footer {
+	width: 840px;
+	margin: 0 auto;
+	padding: 0 80px;
+	color: #cccccc;
+}
+
+#templatemo_footer  a {
+	color: #ffffff;
+}
+
+#templatemo_footer .section_w280 {
+	float: left;
+	width: 240px;
+	padding-right: 40px;
+}
+
+#templatemo_footer .section_w280 h3 {
+	width: 175px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #6ca7f7;
+	
+}
+
+#templatemo_footer .footer_list {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+#templatemo_footer .footer_list li {
+	margin: 0px;
+	padding: 3px 0;
+}
+
+#templatemo_footer .footer_list li a {
+	color: #cccccc;
+}
+
+#templatemo_footer .footer_list li a:hover {
+	color: #ff002a;
+	text-decoration: none;
+}
