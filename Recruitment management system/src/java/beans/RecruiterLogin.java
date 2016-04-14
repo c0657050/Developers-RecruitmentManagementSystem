@@ -80,21 +80,18 @@ public class RecruiterLogin {
     
     public String login() {
         try (Connection conn = (Connection) DBUtils.getConnection()) {
-            String sql = "SELECT * FROM recruiters WHERE username=? and password=?";
+            String sql = "SELECT * FROM recruiters WHERE username='"+username+"' and password='"+password+"'";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, username);
-            pstmt.setString(2, password);
             ResultSet rs= pstmt.executeQuery();
-            loggedIn = rs.next();
+             if(rs.next()){
+                 return "recruiterLoggedIn";
+             }
            } catch (SQLException ex) {
-            Logger.getLogger(RecruiterController.class.getName()).log(Level.SEVERE, null, ex);
-             
+            Logger.getLogger(RecruiterLogin.class.getName()).log(Level.SEVERE, null, ex);
            }
-         
-        if(i>0){
-            return "recruiterLoggedIn";
-        }else{
-            return "recruiterLoggedIn";
+        return "recruiterLogin";
+       
+            
         }
     }
-}
+

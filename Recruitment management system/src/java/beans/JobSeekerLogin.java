@@ -25,7 +25,6 @@ import javax.faces.bean.ManagedBean;
 public class JobSeekerLogin {
     private String username;
     private String password;
-    private boolean loggedIn;
     private JobSeeker currentJobSeeker;
     int i;
     
@@ -38,14 +37,12 @@ public class JobSeekerLogin {
     public JobSeekerLogin() {
         username = null;
         password = null;
-        loggedIn = false;
         currentJobSeeker = null;
     }
 
     public JobSeekerLogin(String username, String password, boolean loggedIn) {
         this.username = username;
         this.password = password;
-        this.loggedIn = loggedIn;
         this.currentJobSeeker = currentJobSeeker;
     }
 
@@ -72,9 +69,7 @@ public class JobSeekerLogin {
     }
 
     
-    public boolean isLoggedIn() {
-        return loggedIn;
-    }
+  
   
   public JobSeeker getCurrentJobSeeker(){
       
@@ -84,24 +79,21 @@ public class JobSeekerLogin {
     
     public String login() {
         try (Connection conn = (Connection) DBUtils.getConnection()) {
-            String sql = "SELECT * FROM jobseekers WHERE username=? and password=?";
+            String sql = "SELECT * FROM jobseekers WHERE username='"+username+"' and password='"+password+"'";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, username);
-            pstmt.setString(2, password);
             ResultSet rs= pstmt.executeQuery();
-            loggedIn = rs.next();
+             if(rs.next()){
+                 return "jsLoggedIn";
+             }
            } catch (SQLException ex) {
-            Logger.getLogger(JobSeekerController.class.getName()).log(Level.SEVERE, null, ex);
-             return "jsLoggedIn";
+            Logger.getLogger(JobSeekerLogin.class.getName()).log(Level.SEVERE, null, ex);
            }
-         
-        if(i>0){
-            return "jsLoggedIn";
-        }else{
-            return "jsLoggedIn";
+        return "jobSeekerLogin";
+       
+            
         }
     }
-}
+
         
     
 
