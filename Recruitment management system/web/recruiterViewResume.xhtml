@@ -50,30 +50,30 @@
                                 <div class="section_w380 float_l">
                     <h:form>
                         <h:outputLabel class="lbljsvrposition" >Position</h:outputLabel>
-                        <h:inputText  class="txtjsvrposition" value=""/>
+                        <h:inputText  class="txtjsvrposition" value="#{jobSeekerResumeController.jsr.position}"/>
                         <h:outputLabel class="lbljsvrplocation">Preferred Location</h:outputLabel>
-                        <h:inputText  class="txtjsvrplocation" value=""/>
+                        <h:inputText  class="txtjsvrplocation" value="#{jobSeekerResumeController.jsr.preferredLocation}"/>
                         <h:outputLabel class="lbljsvrname">Name</h:outputLabel>    
-                        <h:inputText  class="txtjsvrfname" value=""/>
-                        <h:inputText  class="txtjsvrlname" value=""/>
+                        <h:inputText  class="txtjsvrfname" value="#{jobSeekerResumeController.jsr.firstName}"/>
+                        <h:inputText  class="txtjsvrlname" value="#{jobSeekerResumeController.jsr.lastName}"/>
                         <h:outputLabel class="lbljsvrgender">Gender</h:outputLabel>
-                        <h:inputText  class="txtjsvrgender" value=""/>
+                        <h:inputText  class="txtjsvrgender" value="#{jobSeekerResumeController.jsr.gender}"/>
                         <h:outputLabel class="lbljsvrphone">Phone</h:outputLabel>
-                        <h:inputText  class="txtjsvrphone" value=""/>
+                        <h:inputText  class="txtjsvrphone" value="#{jobSeekerResumeController.jsr.phone}"/>
                         <h:outputLabel class="lbljsvremail">Email</h:outputLabel>
                         <h:inputText class="txtjsvremail" value=""/>
                         <h:outputLabel class="lbljsvraointerest">Area of Interest</h:outputLabel>
-                        <h:inputText  class="txtjsvraointerest" value=""/>
+                        <h:inputText  class="txtjsvraointerest" value="#{jobSeekerResumeController.jsr.areaOfInterest}"/>
                         <h:outputLabel class="lbljsvrpskills">Primary Skills</h:outputLabel>
-                        <h:inputText class="txtjsvrpskills"  value="" />
+                        <h:inputText class="txtjsvrpskills"  value="#{jobSeekerResumeController.jsr.primarySkills}" />
                         <h:outputLabel class="lbljsvrtexperience">Total Experience</h:outputLabel>
-                        <h:inputText  class="txtjsvrtexperience" value=""/>
+                        <h:inputText  class="txtjsvrtexperience" value="#{jobSeekerResumeController.jsr.experience}"/>
                         <h:outputLabel class="lbljsvrclocation">Current Location</h:outputLabel>
-                        <h:inputText class="txtjsvrclocation" value="" />
+                        <h:inputText class="txtjsvrclocation" value="#{jobSeekerResumeController.jsr.currentLocation}" />
                         <h:outputLabel class="lbljsvrhqualification">Highest Qualification </h:outputLabel>
-                        <h:inputText  class="txtjsvrhqualification" value=""/>
+                        <h:inputText  class="txtjsvrhqualification" value="#{jobSeekerResumeController.jsr.highestQualification}"/>
                         <h:outputLabel class="lbljsvryopassing">Year of passing</h:outputLabel>
-                        <h:inputText  class="txtjsvryopassing" value=""/>                         
+                        <h:inputText  class="txtjsvryopassing" value="#{jobSeekerResumeController.jsr.yearOfPassing}"/>                         
  
                         <h:commandButton action="jobSeeker" value="Back" class ="btnjsvrback" />    
                     </h:form>
