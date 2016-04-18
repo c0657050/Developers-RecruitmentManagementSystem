@@ -108,7 +108,7 @@ public class JobSeekerResumeController {
                         rs.getString("highest_qualification"),
                         rs.getString("year_of_passing")
                 );
-                jobSeekersResume.add(jsr);
+                jobSeekersResume.add(jsrc);
 
             }
         } catch (SQLException ex) {
