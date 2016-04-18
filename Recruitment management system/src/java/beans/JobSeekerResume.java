@@ -20,12 +20,12 @@ public class JobSeekerResume {
     private String email;
     private String areaOfInterest;
     private String primarySkills;
-    private int experience;
+    private String experience;
     private String currentLocation;
     private String highestQualification;
-    private int yearOfPassing;
+    private String yearOfPassing;
 
-    public JobSeekerResume(String position, String preferredLocation, String firstName, String lastName, String gender, String phone, String email, String areaOfInterest, String primarySkills, int experience, String currentLocation, String highestQualification, int yearOfPassing) {
+    public JobSeekerResume(String position, String preferredLocation, String firstName, String lastName, String gender, String phone, String email, String areaOfInterest, String primarySkills, String experience, String currentLocation, String highestQualification, String yearOfPassing) {
         this.position = position;
         this.preferredLocation = preferredLocation;
         this.firstName = firstName;
@@ -116,11 +116,11 @@ public class JobSeekerResume {
         this.primarySkills = primarySkills;
     }
 
-    public int getExperience() {
+    public String getExperience() {
         return experience;
     }
 
-    public void setExperience(int experience) {
+    public void setExperience(String experience) {
         this.experience = experience;
     }
 
@@ -140,11 +140,11 @@ public class JobSeekerResume {
         this.highestQualification = highestQualification;
     }
 
-    public int getYearOfPassing() {
+    public String getYearOfPassing() {
         return yearOfPassing;
     }
 
-    public void setYearOfPassing(int yearOfPassing) {
+    public void setYearOfPassing(String yearOfPassing) {
         this.yearOfPassing = yearOfPassing;
     }
 

@@ -17,13 +17,13 @@ public class Job {
     private String contact;
     private String location;
     private String specification;
-    private int experience;
+    private String experience;
     private String skills;
 
     public Job() {
     }
 
-    public Job(String company, String address, String email, String contact, String location, String specification, int experience, String skills) {
+    public Job(String company, String address, String email, String contact, String location, String specification, String experience, String skills) {
         this.company = company;
         this.address = address;
         this.email = email;
@@ -34,7 +34,7 @@ public class Job {
         this.skills = skills;
     }
 
-    public Job(String specification, int experience, String skills) {
+    public Job(String specification, String experience, String skills) {
         this.specification = specification;
         this.experience = experience;
         this.skills = skills;
@@ -88,11 +88,11 @@ public class Job {
         this.specification = specification;
     }
 
-    public int getExperience() {
+    public String getExperience() {
         return experience;
     }
 
-    public void setExperience(int experience) {
+    public void setExperience(String experience) {
         this.experience = experience;
     }
 

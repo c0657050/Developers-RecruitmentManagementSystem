@@ -57,37 +57,37 @@
             headerClass="Header"
             rowClasses="Row"
             columnClasses="column1,column2,column3,column4,column5,column6,column7"
-            value="#{jobSeekerResumeController.jsr}" var="jobSeeker">
+            value="#{jobSeekerResumeController.jobSeekersResume}" var="jobSeeker">
             
                 <h:column id="th" headerClass="th">
                 <f:facet name="header">Job Seeker</f:facet>
                     <h:form> 
-                        <h:commandLink action="#{recruiterController.viewJobSeekers()}">#{jobSeekerResumeController.jsr.firstName}</h:commandLink>    
+                        <h:commandLink action="#{recruiterController.viewJobSeekers()}">#{jobSeeker.firstName} #{jobSeeker.lastName}</h:commandLink>    
                     </h:form> 
             </h:column>
             <h:column headerClass="th">
                <f:facet name="header">Location</f:facet>
-               #{jobSeekerResumeController.jsr.currentLocation}
+               #{jobSeeker.currentLocation}
             </h:column>
             <h:column headerClass="th">
                <f:facet name="header">Email</f:facet>
-              #{jobSeekerResumeController.jsr.email}
+              #{jobSeeker.email}
             </h:column>        
             <h:column headerClass="th">
                <f:facet name="header">Contact</f:facet>
-               #{jobSeekerResumeController.jsr.phone}
+               #{jobSeeker.phone}
             </h:column>        
             <h:column headerClass="th">
                <f:facet name="header">Highest Qualification</f:facet>
-               #{jobSeekerResumeController.jsr.highestQualification}
+               #{jobSeeker.highestQualification}
             </h:column>        
             <h:column headerClass="th">
                <f:facet name="header">Experience</f:facet>
-               #{jobSeekerResumeController.jsr.experience}
+               #{jobSeeker.experience}
             </h:column>
             <h:column headerClass="th">
                <f:facet name="header">Skills</f:facet>
-               #{jobSeekerResumeController.jsr.primarySkills}
+               #{jobSeeker.primarySkills}
             </h:column>
             <h:column>
                 <h:form>

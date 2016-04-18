@@ -30,6 +30,14 @@ public class JobSeekerResumeController {
     private JobSeekerResume jsr;
     int i;
 
+    public List<JobSeekerResume> getJobSeekersResume() {
+        return jobSeekersResume;
+    }
+
+    public void setJobSeekersResume(List<JobSeekerResume> jobSeekersResume) {
+        this.jobSeekersResume = jobSeekersResume;
+    }
+
     public JobSeekerResume getJsr() {
         return jsr;
     }
@@ -59,10 +67,10 @@ public class JobSeekerResumeController {
             pstmt.setString(7, jsr.getEmail());
             pstmt.setString(8, jsr.getAreaOfInterest());
             pstmt.setString(9, jsr.getPrimarySkills());
-            pstmt.setInt(10, jsr.getExperience());
+            pstmt.setString(10, jsr.getExperience());
             pstmt.setString(11, jsr.getCurrentLocation());
             pstmt.setString(12, jsr.getHighestQualification());
-            pstmt.setInt(13, jsr.getYearOfPassing());
+            pstmt.setString(13, jsr.getYearOfPassing());
             i = pstmt.executeUpdate();
             System.out.println(i);
 
@@ -95,10 +103,10 @@ public class JobSeekerResumeController {
                         rs.getString("email"),
                         rs.getString("area_of_interest"),
                         rs.getString("primary_skills"),
-                        rs.getInt("experience"),
+                        rs.getString("experience"),
                         rs.getString("current_location"),
                         rs.getString("highest_qualification"),
-                        rs.getInt("year_of_passing")
+                        rs.getString("year_of_passing")
                 );
                 jobSeekersResume.add(jsr);
 

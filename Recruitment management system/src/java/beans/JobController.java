@@ -30,7 +30,7 @@ public class JobController {
     int i;
 
     public JobController() {
-        currentJob = new Job("", "", "", "", "", "", -1, "");
+        currentJob = new Job("", "", "", "", "", "", "", "");
         getJobsFromDB();
 
     }
@@ -68,7 +68,7 @@ public class JobController {
                         rs.getString("contact_no"),
                         rs.getString("location"),
                         rs.getString("specification"),
-                        rs.getInt("experience"),
+                        rs.getString("experience"),
                         rs.getString("skills")
                 );
                 jobs.add(j);
@@ -93,7 +93,7 @@ public class JobController {
             pstmt.setString(4, currentJob.getContact());
             pstmt.setString(5, currentJob.getLocation());
             pstmt.setString(6, currentJob.getSpecification());
-            pstmt.setInt(7, currentJob.getExperience());
+            pstmt.setString(7, currentJob.getExperience());
             pstmt.setString(8, currentJob.getSkills());
 
             i = pstmt.executeUpdate();
@@ -144,7 +144,7 @@ public class JobController {
             PreparedStatement pst = conn.prepareStatement("SELECT * FROM jobs WHERE experience=?, location=?");
          
              
-               pst.setInt(1, currentJob.getExperience());
+               pst.setString(1, currentJob.getExperience());
                pst.setString(2, currentJob.getSkills());
                pst.setString(3, currentJob.getLocation());
                ResultSet rs = pst.executeQuery();
@@ -156,7 +156,7 @@ public class JobController {
                         rs.getString("contact_no"),
                         rs.getString("location"),
                         rs.getString("specification"),
-                        rs.getInt("experience"),
+                        rs.getString("experience"),
                         rs.getString("skills")
                 );
                   currentJob =j;
