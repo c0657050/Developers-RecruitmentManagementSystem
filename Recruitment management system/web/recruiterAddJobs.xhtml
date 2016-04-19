@@ -64,27 +64,12 @@
                                         <h:outputLabel for="Job Location" class="lbladdvjlocation">Job Location</h:outputLabel>
                                         <h:inputText class="txtaddvjlocation" value="#{jobController.currentJob.location}"/>
 
-                                        <h:outputLabel for="Job Specification" class="lbladdvjspecification">Job Specification</h:outputLabel>
-
-                                        <h:selectOneMenu class="select11"  value="#{jobController.currentJob.experience}">
-                                            <f:selectItem itemValue="UpTo 1" itemLabel="UpTo 1" />
-                                            <f:selectItem itemValue="1" itemLabel="1" />
-                                            <f:selectItem itemValue="2" itemLabel="2" />	   						
-                                            <f:selectItem itemValue="3" itemLabel="3" />
-                                            <f:selectItem itemValue="4" itemLabel="4" />
-                                            <f:selectItem itemValue="5+" itemLabel="5+" />
-                                        </h:selectOneMenu>
-
-                                        <h:selectOneMenu class="select12" value="#{jobController.currentJob.skills}">
-                                            <f:selectItem itemValue="Java" itemLabel="Java" />
-                                            <f:selectItem itemValue="C / C++" itemLabel="C / C++" />
-                                            <f:selectItem itemValue="Android" itemLabel="Android" />	   						
-                                        </h:selectOneMenu>
-
-                                        <h:selectOneMenu class="select13" value="#{jobController.currentJob.specification}">
-                                            <f:selectItem itemValue="B.E/B.Tech" itemLabel="B.E/B.Tech" />
-                                            <f:selectItem itemValue="M.E/M.tech" itemLabel="M.E/M.tech" />	
-                                        </h:selectOneMenu>
+                                        <h:outputLabel for="Experience" class="lbladdvjspecification">Experience</h:outputLabel>
+                                        <h:inputText class="txtaddvjexperience" value="#{jobController.currentJob.experience}"/>
+                                        <h:outputLabel for="Skills" class="lbladdvskills">Skills</h:outputLabel>                                        
+                                        <h:inputText class="txtaddvjskills" value="#{jobController.currentJob.skills}" />
+                                        <h:outputLabel for="Qualification" class="lbladdvqualification">Qualification</h:outputLabel>
+                                        <h:inputText class="txtaddvjsspecification" value="#{jobController.currentJob.specification}"/>
 
                                         <h:commandButton value="Add" action = "#{jobController.addJobs}" class ="btnaddvadd" />
                                         <h:commandButton action="recruiterLoggedIn" value="Back" class ="btnaddvback"/>

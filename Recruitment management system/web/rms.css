@@ -847,7 +847,7 @@ h3 {
 }
 /** Add Vacancy***/
 .lbladdvcname,.lbladdvcaddress,.lbladdvcemail,
-.lbladdvcnumber,.lbladdvjlocation,.lbladdvjspecification{
+.lbladdvcnumber,.lbladdvjlocation,.lbladdvjspecification,.lbladdvskills,.lbladdvqualification{
     position:absolute; 
     overflow:hidden; 
     width:200px; 
@@ -874,8 +874,15 @@ h3 {
 .lbladdvjspecification{
     top: 625px;
 }
+.lbladdvskills{
+    top: 660px;    
+}
+.lbladdvqualification{
+    top: 695px;
+}
 .txtaddvcname,.txtaddvcaddress,.txtaddvcemail,
-.txtaddvcnumber,.txtaddvjlocation{
+.txtaddvcnumber,.txtaddvjlocation,.txtaddvjexperience,
+.txtaddvjskills,.txtaddvjsspecification{
     position:absolute; 
     overflow:hidden; 
     width:220px; 
@@ -898,22 +905,14 @@ h3 {
 .txtaddvjlocation{ 
     top: 588px;
 }
-.select11, .select12, .select13{
-    position:absolute; 
-    overflow:hidden; 
-    width:73px; 
-    height:20px; 
-    z-index:8;
-    top: 627px;
+.txtaddvjexperience{
+    top: 623px;
 }
-.select11{
-    left: 562px;
+.txtaddvjskills{
+    top: 658px;
 }
-.select12{
-    left: 637px;
-}
-.select13{
-    left: 712px;
+.txtaddvjsspecification{
+    top: 693px;
 }
 .btnaddvadd,.btnaddvback{
     position:absolute; 
@@ -921,13 +920,13 @@ h3 {
     z-index:1;
     font-weight:600;
     width: 75px;
-    top:660px; 
+    top:725px; 
 }
 .btnaddvadd{
-    left:560px;  
+    left:562px;  
 }
 .btnaddvback{
-    left:640px;  
+    left:642px;  
 }
 #add{
     text-align: center;

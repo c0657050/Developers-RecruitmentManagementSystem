@@ -82,29 +82,11 @@
                 </div> 
 
                 <h:form>
-                    <h:selectOneMenu class="select1"  value="#{jobController.currentJob.experience}">
-                        <f:selectItem itemValue="UpTo 1" itemLabel="UpTo 1" />
-                        <f:selectItem itemValue="1" itemLabel="1" />
-                        <f:selectItem itemValue="2" itemLabel="2" />	   						
-                        <f:selectItem itemValue="3" itemLabel="3" />
-                        <f:selectItem itemValue="4" itemLabel="4" />
-                        <f:selectItem itemValue="5+" itemLabel="5+" />
-                    </h:selectOneMenu>
+                    <h:inputText class="select1"  value="#{jobController.currentJob.experience}"/>
 
-                    <h:selectOneMenu class="select2" value="#{jobController.currentJob.skills}">
-                        <f:selectItem itemValue="Java" itemLabel="Java" />
-                        <f:selectItem itemValue="C / C++" itemLabel="C / C++" />
-                        <f:selectItem itemValue="Android" itemLabel="Android" />	   						
-                    </h:selectOneMenu>
+                    <h:inputText class="select2" value="#{jobController.currentJob.skills}"/>
 
-                    <h:selectOneMenu class="select3" value="#{jobController.currentJob.location}">
-                        <f:selectItem itemValue="UpTo 1" itemLabel="Toronto" />
-                        <f:selectItem itemValue="1" itemLabel="Vancouver" />
-                        <f:selectItem itemValue="2" itemLabel="Montrial" />	   						
-                        <f:selectItem itemValue="3" itemLabel="Markham" />
-                        <f:selectItem itemValue="4" itemLabel="Mississauga" />
-                        <f:selectItem itemValue="5+" itemLabel="North York" />
-                    </h:selectOneMenu>
+                    <h:inputText class="select3" value="#{jobController.currentJob.location}"/>
 
 
                     <h:commandButton value="SUBMIT" action="#{jobController.searchJobs()}"  class ="btn5" />
