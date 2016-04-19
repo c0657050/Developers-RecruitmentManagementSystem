@@ -320,19 +320,6 @@ h3 {
 	color: #000000;
 }
 
-.btn5{
-    position:absolute; 
-    overflow:hidden; 
-    z-index:1;
-    font-weight:600;
-}
-
-
-.btn5{
-    left:630px;
-    top:570px;
-    z-index:3;
-}
 
 /**Recruiter SignUp Form**/
 .rsfname, .rslname, .rscname,
@@ -344,7 +331,7 @@ h3 {
     height:18px; 
     z-index:8;
     font-size: 15px;   
-    margin-left: 150px;
+    margin-left: 162px;
     text-align: right;
 }
 .rsfname{
@@ -434,7 +421,7 @@ h3 {
     z-index:8;
     font-size: 15px;    
     text-align: right;
-    margin-left:55px;
+    margin-left:80px;
 }
 .lblrLuname{
     top:478px; 
@@ -449,7 +436,7 @@ h3 {
     width:195px; 
     height:18px; 
     z-index:8;
-    left:630px;
+    left:490px;
 }
 .txtrLusername{ 
     top:477px; 
@@ -468,10 +455,10 @@ h3 {
 }
 .btnrLlogin{
 
-     left:628px; 
+     left:490px; 
 }
 .btnrLback{
-    left:690px; 
+    left:550px; 
 }
 /** Job Seeker Registration Form**/
  .lbljsname,.lbljsaddress,.lbljspnumber,
@@ -482,7 +469,7 @@ h3 {
     height:18px; 
     z-index:8;
     font-size: 15px;    
-    left:540px;
+    left:380px;
     text-align: right;
     }
 .lbljsname{
@@ -558,7 +545,7 @@ h3 {
 .btnjsback{
     margin-left: 450px;
 }
-
+/**Job Seeker Login**/
 .lbljsLuname, .lbljsLpassword{
     position:absolute; 
     overflow:hidden; 
@@ -567,14 +554,14 @@ h3 {
     z-index:8;
     font-size: 15px;    
     text-align: right;
+    margin-left:330px;
 }
 .lbljsLuname{
     top:480px; 
-    margin-left:425px;
+
 }
 .lbljsLpassword{
     top:515px; 
-    margin-left:425px;
 }
 .txtjsLusername,.txtjsLpassword{
     position:absolute; 
@@ -582,7 +569,7 @@ h3 {
     width:195px; 
     height:18px; 
     z-index:8;
-    left:630px;
+    left:530px;
 }
 .txtjsLusername{ 
     top:477px; 
@@ -601,10 +588,10 @@ h3 {
 }
 .btnjsLlogin{
 
-     left:628px; 
+     left:532px; 
 }
 .btnjsLback{
-    left:695px; 
+    left:590px; 
 }
 /** Job Seeker Resume**/
 .lbljsrposition, .lbljsrplocation,.lbljsrname,.lbljsrgender,
@@ -616,7 +603,8 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-    left: 490px;
+    left: 330px;
+    font-weight: 900;
 }
 .lbljsrposition{
     top: 480px;
@@ -732,11 +720,11 @@ h3 {
 }
 .btnjsrupload{
     top:900px; 
-    left:695px;  
+    left:537px;  
 }
 .btnjsrback{
     top:900px; 
-    left:785px;  
+    left:620px;  
 }
 #FR{
     margin-left: 200px;
@@ -776,7 +764,7 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-    left: 400px;
+    left: 360px;
 }
 .lbljsvjcname{
     top: 460px;
@@ -847,10 +835,10 @@ h3 {
     top:735px; 
 }
 .btnjsvjapply{
-    left:605px;  
+    left:562px;  
 }
 .btnjsvjback{
-    left:690px;  
+    left:650px;  
 }
 #view{
     text-align: center;
@@ -866,7 +854,7 @@ h3 {
     height:25px; 
     z-index:8;
     text-align: right;
-    left: 400px;
+    left: 360px;
 }
 .lbladdvcname{
     top: 450px;
@@ -919,13 +907,13 @@ h3 {
     top: 627px;
 }
 .select11{
-    left: 605px;
+    left: 562px;
 }
 .select12{
-    left: 682px;
+    left: 637px;
 }
 .select13{
-    left: 758px;
+    left: 712px;
 }
 .btnaddvadd,.btnaddvback{
     position:absolute; 
@@ -936,10 +924,10 @@ h3 {
     top:660px; 
 }
 .btnaddvadd{
-    left:605px;  
+    left:560px;  
 }
 .btnaddvback{
-    left:685px;  
+    left:640px;  
 }
 #add{
     text-align: center;
@@ -1080,7 +1068,9 @@ h3 {
 }
 
 
-/****/
+/**Job Seeker Job Search**/
+
+
 .select1, .select2,.select3{
     top:500px; 
     position:absolute; 
@@ -1090,13 +1080,22 @@ h3 {
     z-index:8;
 }
 .select1{
-    left: 350px;
+    left: 290px;
 }
 .select2{
-    left: 600px; 
+    left: 540px; 
 }
 .select3{
-    left: 850px;
+    left: 790px;
+}
+.btn5{
+    position:absolute; 
+    overflow:hidden; 
+    z-index:1;
+    font-weight:600;
+    left:600px;
+    top:570px;
+    z-index:3;
 }
 
 

@@ -103,7 +103,7 @@ public class JobController {
         }
         getJobsFromDB();
         if (i > 0) {
-            return "jobSeekerViewAllJobs";
+            return "recruiterViewAllJobs";
         } else {
             return "recruiterAddJobs";
         }

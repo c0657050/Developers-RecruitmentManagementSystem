@@ -62,12 +62,13 @@
                                         <h:inputText class="txtjsvjcaddress" value="#{jobController.currentJob.address}"/>
                                         <h:inputText  class="txtjsvjcemail" value="#{jobController.currentJob.email}"/>
                                         <h:inputText class="txtjsvjcnumber" value="#{jobController.currentJob.contact}"/>
-                                        <h:inputText  class="txtjsvjjlocation" value=""/>
+                                        <h:inputText  class="txtjsvjjlocation" value="#{jobController.currentJob.location}"/>
                                         <h:inputText class="txtjsvjjspecification" value="#{jobController.currentJob.specification}"></h:inputText>
-                                        <h:inputText  class="txtjsvjexperience" value=""/>
+                                        <h:inputText  class="txtjsvjexperience" value="#{jobController.currentJob.experience}"/>
                                         <h:inputText class="txtjsvjskills" value="#{jobController.currentJob.skills}"></h:inputText>
-                                        <h:commandButton value="Apply" class ="btnjsvjapply" />
-                                        <h:commandButton value="Back" class ="btnjsvjback" />
+                                        <h:commandButton action="jobSeekerViewJob" value="Apply" class ="btnjsvjapply" />
+
+                                        <h:commandButton action="jobSeekerViewAllJobs" value="Back" class ="btnjsvjback"/>
                                     </h:form>
                                 </div>
                                 <div class="section_w380 float_r">
